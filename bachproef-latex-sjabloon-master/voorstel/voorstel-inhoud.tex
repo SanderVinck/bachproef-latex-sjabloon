@@ -3,24 +3,52 @@
 \section{Introductie} % The \section*{} command stops section numbering
 \label{sec:introductie}
 
-Hier introduceer je werk. Je hoeft hier nog niet te technisch te gaan.
-
-Je beschrijft zeker:
+In de hedendaagse maatschappij heeft elk bedrijf een IT-afdeling die een grote bijdrage levert aan het succes of falen van het bedrijf. Een bedrijf streeft ernaar om zijn klanten en werknemers de beste service en beschikbaarheid aan te bieden. In dit onderzoek worden twee IT-omgevingen met elkaar vergeleken: enerzijds een MDT/WDS-omgeving en anderzijds een Microsoft Intune Autopilot omgeving. 
+\newline
+Het doel van dit onderzoek is om uitgebreid te beschrijven wat de voor- en nadelen zijn van beide IT-omgevingen alsook de verschillende uitdagingen die met beide omgevingen gepaard gaan. Volgende onderzoeksvragen zullen beantwoord worden:
 
 \begin{itemize}
-  \item de probleemstelling en context
-  \item de motivatie en relevantie voor het onderzoek
-  \item de doelstelling en onderzoeksvraag/-vragen
+    \item Wat zijn de voor- en nadelen van zowel een MDT/WDS-omgeving en een Microsoft Intune Autopilot omgeving voor een dienstverlenende KMO?
+    \item Wat zijn de uitdagingen die gepaard gaan met zowel een MDT/WDS-omgeving en een Microsoft Intune Autopilot omgeving voor een dienstverlenende KMO?
+    \item Is het voordelig voor een dienstverlenende KMO om zijn MDT/WDS-omgeving te vervangen door een Microsoft Intune Autopilot omgeving?
 \end{itemize}
+
+
+%Je beschrijft zeker:
+
+%\begin{itemize}
+%  \item de probleemstelling en context
+%  \item de motivatie en relevantie voor het onderzoek
+%  \item de doelstelling en onderzoeksvraag/-vragen
+%\end{itemize}
+
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{State-of-the-art}
 \label{sec:state-of-the-art}
 
-Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein. Dit kan bijvoorbeeld een literatuurstudie zijn. Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek? Wat is de relevantie met jouw onderzoek?
+%Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein. Dit kan bijvoorbeeld een literatuurstudie zijn. Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek? Wat is de relevantie met jouw onderzoek?
 
-Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Doll1954}! Denk zeker goed na welke werken je refereert en waarom.
+%Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Doll1954}! Denk zeker goed na welke werken je refereert en waarom.
+
+\subsection{Wat zijn deployment services en waarvoor worden ze gebruikt?}
+Deployment services worden gebruikt in vele bedrijven om te voorkomen dat beheerders niet elk apart toestel in een netwerk manueel moeten opzetten. Op deze manier kan men te allen tijden een duidelijk beeld verkrijgen over de staat waarin de toestellen zich binnen het netwerk bevinden. Via deze tools kan veel tijd bespaard worden en wordt de kans op fouten, die gepaard gaan met het manueel opzetten van toestellen, verkleind. \autocite{Goessens2020}
+
+\subsection{Microsoft Intune Autopilot}
+Volgens \textcite{PCI2021} werkt de nieuwe Microsoft Intune Autopilot omgeving vanuit de cloud. Met Intune kunnen organisaties hun medewerkers vrijwel overal en op vrijwel elk apparaat toegang geven tot bedrijfstoepassingen, gegevens en bronnen en deze simultaan beveiligen.
+
+\subsection{MDT}
+MDT bestaat al sinds 2003, toen het voor het eerst werd geïntroduceerd als Business Desktop Deployment (BDD) 1.0. De toolkit is geëvolueerd, zowel in functionaliteit als in populariteit, en vandaag wordt hij beschouwd als fundamenteel voor de implementatie van Windows besturingssystemen en bedrijfsapplicaties.
+\newline
+MDT is een gebundelde verzameling hulpmiddelen, processen en richtlijnen voor het automatiseren van desktop- en serverimplementatie. Men kan het gebruiken om referentie-images te maken of als een complete implementatieoplossing. MDT is een van de belangrijkste hulpmiddelen waarover IT-professionals vandaag de dag beschikken. MDT verkort niet alleen de implementatietijd en standaardiseert desktop- en serverimages, maar stelt IT-professionals ook in staat om beveiliging en lopende configuraties eenvoudiger te beheren. MDT bouwt voort op de kerntools voor implementatie in de Windows Assessment and Deployment Kit (Windows ADK) met extra richtlijnen en functies die zijn ontworpen om de complexiteit en tijd die nodig is voor implementatie in een bedrijfsomgeving te verminderen.\autocite{Microsoft2021}
+
+\subsection{WDS}
+Volgens \textcite{Boger2014} is Windows Deployment Services (WDS) een serverrol die beheerders de mogelijkheid biedt om Windows-besturingssystemen op afstand te implementeren. 
+\newline
+WDS kan gebruikt worden voor netwerkgebaseerde installaties om nieuwe computers in te stellen, zodat beheerders niet elk besturingssysteem (OS) rechtstreeks hoeven te installeren.
+\newline
+Als een beheerder overweegt WDS te gebruiken, raadt Microsoft aan een goed begrip te hebben van gemeenschappelijke netwerkcomponenten en implementatietechnologieën, waaronder ADDS (Active Directory Domain Services), DNS (Domain Name Servers) en DHCP (Dynamic Host Configuration Protocol). Microsoft beveelt ook aan dat het nuttig kan zijn voor beheerders om een goed begrip te hebben van de Preboot Execution Environment (PXE).
 
 % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
 % \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
@@ -29,23 +57,33 @@ Verwijs bij elke introductie van een term of bewering over het domein naar de va
 %   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
 %   ...'')
 
-Je mag gerust gebruik maken van subsecties in dit onderdeel.
+%Je mag gerust gebruik maken van subsecties in dit onderdeel.
 
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}
 \label{sec:methodologie}
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor experimenten, vragenlijsten, simulaties? Je beschrijft ook al welke tools je denkt hiervoor te gebruiken of te ontwikkelen.
+Als eerste wordt een uitgebreide literatuurstudie uitgevoerd over zowel een MDT/WDS-omgeving als een Microsoft Intune Autopilot omgeving. 
+\newline
+In het tweede deel worden beide IT-omgevingen met elkaar vergeleken, waarbij de voor- en nadelen beschreven worden en de bijkomende uitdagingen die met beide omgevingen gepaard gaan voor de dienstverlenende KMO.
+\newline
+Als laatste wordt in de dienstverlenende KMO (VGD) bepaald of de nieuwe Intune Autopilot omgeving een betere oplossing is dan de oude MDT/WDS-omgeving.
+
+%Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor experimenten, vragenlijsten, simulaties? Je beschrijft ook al welke tools je denkt hiervoor te gebruiken of te ontwikkelen.
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwachte resultaten}
 \label{sec:verwachte_resultaten}
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de stukken van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet hoe je je data gaat moeten structureren.
+Het verwachte resultaat is dat de nieuwe Microsoft Intune Autopilot omgeving een betere oplossing biedt voor een IT-omgeving dan de oudere MDT/WDS-omgeving. Doordat de Intune Autopilot omgeving cloudgericht werkt, zal de IT-omgeving flexibeler zijn en een positieve invloed hebben op de schaalbaarheid van het bedrijf. Dit onderzoek zal duidelijkheid brengen of de vervanging van de oude MDT/WDS-omgeving met de nieuwe Microsoft Intune Autopilot omgeving voor de KMO de juiste oplossing is. Dit zal afhangen van de grootte van de KMO en welke uitdagingen en voor- en nadelen gepaard gaan met de nieuwe omgeving tegenover de oude omgeving.
+
+%Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de stukken van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet hoe je je data gaat moeten structureren.
 
 %---------- Verwachte conclusies ----------------------------------------------
 \section{Verwachte conclusies}
 \label{sec:verwachte_conclusies}
 
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
+Voor de KMO zal de nieuwe Microsoft Intune Autopilot omgeving ervoor zorgen dat de IT-omgeving flexibeler en beter schaalbaar zal zijn dan de oude MDT/WDS-omgeving. Bij de Microsoft Intune Autopilot omgeving is het ook niet meer nodig om hardware en infrastructuur te plannen, kopen en onderhouden als men mobiele apparaten met Intune vanuit de cloud beheert, wat ervoor zorgt dat het bedrijf minder moet investeren in infrastructuur.
+
+% Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
 
