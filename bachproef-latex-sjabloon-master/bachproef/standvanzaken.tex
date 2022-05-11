@@ -1,6 +1,5 @@
 \chapter{\IfLanguageName{dutch}{Stand van zaken}{State of the art}}
 \label{ch:stand-van-zaken}
-
 % Tip: Begin elk hoofdstuk met een paragraaf inleiding die beschrijft hoe
 % dit hoofdstuk past binnen het geheel van de bachelorproef. Geef in het
 % bijzonder aan wat de link is met het vorige en volgende hoofdstuk.
@@ -13,5 +12,58 @@
 %Soms wil je de auteur niet expliciet vernoemen, dan gebruik je \texttt{$\backslash${}autocite\{\}}. In de volgende paragraaf een voorbeeld van elk.
 
 %\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+\section{\IfLanguageName{dutch}{Probleemstelling}{Problem Statement}}
+\label{sec:probleemstelling}
 
-\lipsum[7-20]
+
+\section{Definitie KMO}
+
+Bedrijven kunnen opgedeeld worden volgens grootte. Er zijn drie groottes waarin er een onderscheid gemaakt wordt:
+
+\begin{itemize}
+    \item Kleine onderneming (KO)
+    \item Middelgrote onderneming (MO)
+    \item Grote onderneming (GO)
+\end{itemize}
+
+Volgens \textcite{Vlaio2014} is een ko of kleine onderneming een zelfstandig bedrijf met minder dan 50 werknemers én met een maximum jaaromzet van €10 miljoen of een maximum balanstotaal van €10 miljoen.
+
+Een kmo of kleine of middelgrote onderneming is een zelfstandig bedrijf met minder dan 250 werknemers én met een maximum jaaromzet van €50 miljoen of een maximum balanstotaal van €43 miljoen.
+
+Ondernemingen die ontdekken dat de drempel in het voorbij boekjaar overschreden is, verliezen pas de status van KMO (of ko) als deze situatie zich gedurende twee opeenvolgende boekjaren voordoet.
+
+\newpage
+Een onderneming moet voldoen aan elk van de drie voorwaarden om tot een bepaalde groottecategorie te behoren:
+
+\begin{table}[ht]
+    \centering
+    \caption{Definitie KO, MO en GO}
+    \begin{tabular}[t]{l>{\raggedright}p{0.2\linewidth}>{\raggedright\arraybackslash}p{0.3\linewidth}>{\raggedright\arraybackslash}p{0.18\linewidth}}
+        \toprule
+        \textbf{Groottecategorie} & \textbf{aantal werknemers \footnote{ Het aantal werknemers die bij de RSZ-ingeschreven zijn als VTE (voltijds equivalent)} } & \textbf{jaaromzet of jaarlijks balanstotaal} & \textbf{zelfstandigheid} \\
+        \midrule
+        KO & minder dan 50 & tot 10 miljoen of tot 10 milojoen & ja \\
+        MO  &minder dan 250 & tot 50 miljoen of tot 43 milojoen & ja \\
+        GO & vanaf 250 & meer dan 50 miljoen en meer dan 43 milojoen & ja \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+%Afbeelding te plaatsen
+
+Deeltijdwerknemers of werknemers die een jaar niet voor een bedrijf hebben gewerkt, worden proportioneel omgerekend naar "voltijdse werknemers" (bijvoorbeeld: twee deeltijdse werknemers zijn één voltijdse werknemer). Uitzendkrachten worden niet meegeteld.
+
+Wanneer een onderneming een kmo-portefeuille aanvraagt, wordt op basis van deze criteria de grootte van de onderneming voorgesteld. De kmo-portefeuille verkrijgt deze gegevens via de Nationale Bank van België. De grootte van de onderneming wordt vastgesteld bij de eerste succesvolle steunaanvraag in een kalenderjaar en geldt voor de rest van het kalenderjaar.
+
+De kmo-portefeuille controleert enkel de gegevens die gekoppeld zijn aan het ondernemingsnummer van de onderneming die de steun aanvraagt. Indien deze onderneming deel uitmaakt van een groep ondernemingen, moeten ook de criteria van andere ondernemingen (deelnemende ondernemingen en/of deelnemende ondernemingen) worden meegerekend volgens de definitie van KMO's in Europa.
+
+\section{Verschil tussen staging en deployment}
+In de IT-wereld heeft het woord staging een meerduidige betekenis. Een staging omgeving wordt zo beschreven als: ‘een kopie van de productieomgeving op een private server, dat dienst doet als veilige omgeving waarop wijzigingen kunnen worden getest’, zoals omschreven in \textciter(commonplaces2021). In tegenstelling tot deze definitie verwijst de term staging die in de context van deze bachelorproef wordt gebruikt naar de definitie die in de handleiding van \textcite(Vodafone2014) te vinden is: "Staging bereidt een toestel voor op enrollment."
+
+
+
+Staging verwijst dus naar de basisconfiguratie die op alle toestellen op dezelfde manier wordt uitgevoerd om het toestel in kwestie operationeel te krijgen. Deze vaste installaties kunnen geautomatiseerd worden. In dat geval wordt het een taak genoemd. Deze taken (of tasks) verschillen sterk van bedrijf tot bedrijf, aangezien de behoeften van het bedrijf niet noodzakelijk dezelfde zijn als een ander bedrijf. Er zijn echter altijd veel taken die elk bedrijf moet uitvoeren. Er moet altijd een besturingssysteem of OS geïnstalleerd worden en de vereiste licenties moeten toegewezen worden. Daarnaast moet het apparaat lid worden van het bedrijfsdomein, de vereiste updates voor Windows downloaden en installeren, en de vereiste software aan het apparaat toevoegen.
+
+
+
+Volgens \textcite(techopedia2018) betekent deployment, wanneer gebruikt in de context van netwerkbeheer: "Deployment verwijst naar het proces dat doorlopen moet worden om een nieuwe computer of een nieuw systeem zo op te zetten, dat het klaar is om gebruikt te worden in de werkomgeving". Deployment is dus een zeer breed concept. Het beschrijft het gehele proces dat moet worden doorlopen voordat een systeem effectief kan gebruikt worden. Dit omsluit alle installaties, configuraties, specifieke wijzigingen en tests die moeten worden uitgevoerd voordat het systeem volledig operationeel is.
