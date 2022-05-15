@@ -11,5 +11,105 @@
 %% mogelijke manier toegepast hebt om een antwoord te vinden op de
 %% onderzoeksvraag.
 
-\lipsum[21-25]
+Het doel van dit onderzoek is om uitgebreid te beschrijven wat de voor- en nadelen zijn van beide IT-omgevingen alsook de verschillende uitdagingen die met beide omgevingen gepaard gaan. Volgende onderzoeksvragen zullen beantwoord worden:
+
+\begin{itemize}
+    \item Wat zijn de voor- en nadelen van zowel een MDT/WDS-omgeving als een Microsoft Intune Autopilot omgeving voor een dienstverlenende KMO?
+    \item Wat zijn de uitdagingen die gepaard gaan met zowel een MDT/WDS-omgeving als een Microsoft Intune Autopilot omgeving voor een dienstverlenende KMO?
+    \item Is het voordelig voor een dienstverlenende KMO om zijn MDT/WDS-omgeving te vervangen door een Microsoft Intune Autopilot omgeving?
+\end{itemize}
+
+\section{Werkwijze}
+Er wordt een onderzoek gevoerd naar laptop deployment voor twee verschillende Windows bedrijfsomgevingen:
+
+\begin{itemize}
+    \item WDS/MDT
+    \item Microsoft Intune: Windows Autopilot
+\end{itemize}
+
+Beide technologieën worden in volgende structuur opgedeeld om een optimale vergelijkende studie te bekomen:
+
+\begin{enumerate}
+    \item Installeren van Windows
+    \item Installeren van Applicaties
+    \item Installeren van Policies
+\end{enumerate}
+
+Er worden stelselmatig voor- en nadelen opgesomd om een antwoord te formuleren op de onderzoeksvraag.
+
+Tenslotte wordt er een break-even opgesteld van beide technologieën.
+
+\section{Deployment via WDS/MDT}
+
+Er zijn twee soorten images die gebruikt worden voor laptopdeployment via WDS/MDT, namelijk Lite Touch deployment en Zero Touch deployment.
+
+\subsection{Lite Touch Deployment}
+De implementatie van Lite Touch vereist tussenkomst van de gebruiker. Het vereist een minimale infrastructuur en kan worden geïnstalleerd vanaf een netwerkshare of media met behulp van een optische schijf of USB flash drive. Bovendien moeten het besturingssysteem en de toepassingen worden geïnstalleerd volgens de software- en computerconfiguratievereisten die volgen op de snelstartgids van Microsoft. \autocite(Lithmee2019)
+
+Daarnaast zijn de belangrijkste stappen voor het implementeren van LiteTouch:
+
+\begin{itemize}
+    \item Verkrijg de vereiste software
+    (MDT 2013 of later, Windows ADK for Windows 8.1, Windows 8.1 distribution files, Device drivers vereist voor doelcomputer, WDG-CLI-01, Device drivers nodig voor de referentiecomputer, WDG-REF-01)
+    \item Voorbereiden van de MDT omgeving
+    \item Configureer MDT om de referentiecomputer te maken
+    \item Deploy Windows 10 en capture een image van de referentiecomputer
+    \item Configureer MDT om Windows 8.1 te deployen op de doelcomputer
+    \item Deploy de captured image van de referentiecomputer naar de doelcomputer.
+\end{itemize}
+
+\subsection{Zero Touch Deployment}
+Zero Touch Deployment is een volledig geautomatiseerde implementatie. Voor deze installatie is dus geen tussenkomst van de gebruiker vereist.
+Een continue netwerkverbinding met het distributiepunt is echter wel vereist.
+
+Zero Touch Deployment vereist installatie via Configuration Manager van diverse software, zoals:
+
+\begin{itemize}
+    \item Windows Server 2008 R2
+    \item Microsoft SQL Server 2008 R2
+    \item SQL Server 2008 R2 Service Pack 1 (SP1)
+    \item SQL Server 2008 R2 SP1 Cumulative Update 6 (CU6)
+    \item Windows 8.1
+    \item System Center 2012 R2 Configuration Manager
+    \item Microsoft . NET Framework versie 3.5 met SP1
+    \item Windows PowerShell versie 2.0
+    \item Windows Pre-installatieomgeving (Windows PE), die is opgenomen in Configuration Manager
+    \item Netwerkservices, waaronder Domain Name System (DNS) en Dynamic Host Configuration Protocol (DHCP) en Active Directory Domain Services (AD DS)
+\end{itemize}
+
+De belangrijkste stappen voor een "zero-touch"-implementatie zijn: \autocite(Lithmee2019)
+
+\begin{enumerate}
+    \item De vereiste infrastructuur voorbereiden
+    \item Voorbereiden van de MDT-omgeving
+    \item Een task sequence maken en configureren om een referentiecomputer te maken
+    \item Windows 10 implementeren en de image van de referentiecomputer vastleggen
+    \item Maak en configureer een task sequence om de doelcomputer te implementeren
+\end{enumerate}
+
+In aanvulling op de  type implementatie, waarbij de vastgelegde image van de referentiecomputer wordt geïmplementeerd op de doelcomputer, is er nog een ander type implementatie, namelijk een gebruikers gestuurde implementatie. Handmatige tussenkomst is vereist om te reageren op installatie prompts zoals wachtwoorden, computernamen en taalinstellingen. Zero touch en user driven types vereisen ondersteuning van de Microsoft System Center infrastructuur.
+
+\subsection{Installeren van Windows}
+
+\subsection{Installeren van Applicaties}
+
+\subsection{Installeren van Policies}
+
+
+
+
+\section{Microsoft Intune: Windows Autopilot}
+
+\subsection{Installeren van Windows}
+
+\subsection{Installeren van Applicaties}
+
+\subsection{Installeren van Policies}
+
+
+
+
+\section{Break-even}
+
+%\lipsum[21-25]
 

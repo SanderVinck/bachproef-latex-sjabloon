@@ -60,10 +60,58 @@ De kmo-portefeuille controleert enkel de gegevens die gekoppeld zijn aan het ond
 \section{Verschil tussen staging en deployment}
 In de IT-wereld heeft het woord staging een meerduidige betekenis. Een staging omgeving wordt zo beschreven als: ‘een kopie van de productieomgeving op een private server, dat dienst doet als veilige omgeving waarop wijzigingen kunnen worden getest’, zoals omschreven in \textciter(commonplaces2021). In tegenstelling tot deze definitie verwijst de term staging die in de context van deze bachelorproef wordt gebruikt naar de definitie die in de handleiding van \textcite(Vodafone2014) te vinden is: "Staging bereidt een toestel voor op enrollment."
 
-
-
 Staging verwijst dus naar de basisconfiguratie die op alle toestellen op dezelfde manier wordt uitgevoerd om het toestel in kwestie operationeel te krijgen. Deze vaste installaties kunnen geautomatiseerd worden. In dat geval wordt het een taak genoemd. Deze taken (of tasks) verschillen sterk van bedrijf tot bedrijf, aangezien de behoeften van het bedrijf niet noodzakelijk dezelfde zijn als een ander bedrijf. Er zijn echter altijd veel taken die elk bedrijf moet uitvoeren. Er moet altijd een besturingssysteem of OS geïnstalleerd worden en de vereiste licenties moeten toegewezen worden. Daarnaast moet het apparaat lid worden van het bedrijfsdomein, de vereiste updates voor Windows downloaden en installeren, en de vereiste software aan het apparaat toevoegen.
 
-
-
 Volgens \textcite(techopedia2018) betekent deployment, wanneer gebruikt in de context van netwerkbeheer: "Deployment verwijst naar het proces dat doorlopen moet worden om een nieuwe computer of een nieuw systeem zo op te zetten, dat het klaar is om gebruikt te worden in de werkomgeving". Deployment is dus een zeer breed concept. Het beschrijft het gehele proces dat moet worden doorlopen voordat een systeem effectief kan gebruikt worden. Dit omsluit alle installaties, configuraties, specifieke wijzigingen en tests die moeten worden uitgevoerd voordat het systeem volledig operationeel is.
+
+\section{Noodzakelijkheid van deployment tools}
+Deployment tools worden in vele bedrijven gebruikt om te voorkomen dat beheerders niet elk apart toestel in een netwerk manueel moeten opzetten. Op deze manier kan men te allen tijde een duidelijk beeld verkrijgen over de staat waarin de toestellen zich binnen het netwerk bevinden. Via deze tools kan veel tijd bespaard worden en wordt de kans op fouten, die gepaard gaan met het manueel opzetten van toestellen, verkleind. \autocite{Goessens2020}
+
+
+\section{Werking van deployment tools}
+De werking van deployment tools verschilt van tool tot tool. Er zijn tools die gebruik maken van imaging en er zijn tools die een van een bestaande image vertrekken en applicaties, policies, certificaten, etc. pushen zoals bij Microsoft Intune het geval is. Elke tool heeft ook een verschillende set van functionaliteiten. Als een apparaat tot een operationeel niveau moet gebracht worden, dan moeten er verschillende stappen overlopen worden. Er moet uiteraard een OS of Operating System geïnstalleerd worden, het apparaat moet het domein van het bedrijf joinen en er moeten policies, applicaties, certificaten, etc. gepusht worden. \autocite{Goessens2020}
+
+MDT maakt hiervoor gebruik van een task sequence. Nadat deze task sequence is aangemaakt kan de PXE boot van het nieuwe systeem worden uitgevoerd. Hiervoor is een centraal punt nodig dat het nieuwe apparaat kan aanspreken. Bij MDT wordt dit een sharepoint genoemd, meer bepaald een deployment share. \autocite{Goessens2020}
+
+In het geval van Intune Autopilot gebeurt dit via een Intune Tenant die onder meer verschillende applicaties en configuration profiles bevat die over een internet connectie gepusht worden naar het nieuwe apparaat bij de eerste opstart ervan. Het apparaat moet ook geregistreerd en voorbereid worden voor mobile management.
+
+\subsection{Verschil tussen Lite Touch en Zero Touch deployment}
+Beide deployment tools maken gebruik van een lite touch of een zero touch installatie. Bij een lite touch installatie is er een beperkte nood aan user input en bij een zero touch installatie is er geen user input vereist. Zero touch deployment is een volledig geautomatiseerde deployment schema. Bovendien vereist Lite Touch een minimale infrastructuur, terwijl voor ZeroTouch Deployment een permanente netwerkverbinding nodig is. \autocite(Lithmee2019)
+
+Met Zero Touch kunnen systeembeheerders efficiënt nieuwe computers aan het netwerk toevoegen en ervoor zorgen dat ze aan alle eisen voldoen. Omdat alle apparaten dezelfde structuur hebben, zijn deze bovendien gemakkelijker te onderhouden dan wanneer elke computer een andere structuur heeft. \autocite{Goessens2020}
+
+\section{Overzicht van de verschillende beschikbare tools voor laptop deployment binnen een Windows bedrijfsomgeving}
+
+\subsection{Windows installeren}
+
+\subsubsection{Via USB}
+\paragraph*{Struikelblokken}
+\subsubsection{Ghosting}
+\paragraph*{Struikelblokken}
+\subsubsection{MDT/WDS}
+\paragraph*{Struikelblokken}
+\subsubsection{Microsoft Intune: Windows Autopilot}
+\paragraph*{Struikelblokken}
+
+\subsection{Installeren van applicaties}
+
+\subsubsection{Via USB}
+\paragraph*{Struikelblokken}
+\subsubsection{Ghosting}
+\paragraph*{Struikelblokken}
+\subsubsection{MDT/WDS}
+\paragraph*{Struikelblokken}
+\subsubsection{Microsoft Intune: Windows Autopilot}
+\paragraph*{Struikelblokken}
+
+\subsection{Installeren van policies}
+
+\subsubsection{Via USB}
+\paragraph*{Struikelblokken}
+\subsubsection{Ghosting}
+\paragraph*{Struikelblokken}
+\subsubsection{MDT/WDS}
+\paragraph*{Struikelblokken}
+\subsubsection{Microsoft Intune: Windows Autopilot}
+\paragraph*{Struikelblokken}
+

@@ -55,4 +55,12 @@
   urldate = {2022-04-02},
 }
 
+@Thesis{Goessens2020,
+  author      = {Levi Goessens},
+  date        = {2020},
+  institution = {Campus Atheneum Dendermonde},
+  title       = {Staging en deployment van toestellen in een kleine- ofmiddelgrote Windows bedrijfsomgeving},
+  url         = {https://scriptie.hogent.be/2019-2020/549_201639369_PBA-TIN2_scriptie.pdf},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
