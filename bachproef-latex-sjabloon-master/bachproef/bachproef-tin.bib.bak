@@ -1,29 +1,3 @@
-@book{Knuth1998,
- author = {Knuth, Donald E.},
- title = {The art of computer programming,  volume 3: (2nd ed.) sorting and searching},
- year = {1998},
- publisher = {Addison Wesley Longman Publishing Co., Inc.},
- address = {Redwood City, CA, USA}
-}
-
-@book{Pollefliet2011,
-  author = {Pollefliet, Leen},
-  title = {Schrijven van verslag tot eindwerk: do's en don'ts},
-  year = {2011},
-  publisher = {Academia Press},
-  address = {Gent}
-}
-
-@article{Creeger2009,
-  author = {Creeger, Mache},
-  journal = {Communications of the ACM},
-  number = {8},
-  pages = {50--56},
-  title = {{CTO Roundtable: Cloud Computing}},
-  volume = {52},
-  year = {2009}
-}
-
 @Electronic{Vlaio2014,
   author  = {Vlaio},
   date    = {2014},
@@ -61,6 +35,83 @@
   institution = {Campus Atheneum Dendermonde},
   title       = {Staging en deployment van toestellen in een kleine- ofmiddelgrote Windows bedrijfsomgeving},
   url         = {https://scriptie.hogent.be/2019-2020/549_201639369_PBA-TIN2_scriptie.pdf},
+}
+
+@Electronic{Lithmee2019,
+  author = {Lithmee},
+  date   = {2019-01-16},
+  title  = {What is the Difference Between Lite-Touch and Zero-Touch Deployment},
+  url    = {https://pediaa.com/what-is-the-difference-between-lite-touch-and-zero-touch-deployment/#:~:text=Zero-Touch Deployment-,Definition,Windows OS and Microsoft Office.},
+}
+
+@Electronic{tutorialspoint2022,
+  author = {tutorialspoint},
+  date   = {2022},
+  title  = {Operating System - Overview},
+  url    = {https://www.tutorialspoint.com/operating_system/os_overview.htm#:~:text=An Operating System (OS) is,as disk drives and printers.},
+}
+
+@Electronic{softwarekeep2022,
+  author = {softwarekeep},
+  date   = {2022},
+  title  = {How to Install Windows 10, 8.1 or 7 Using a Bootable USB},
+  url    = {https://softwarekeep.com/help-center/how-to-install-windows-10-81-or-7-using-a-bootable-usb},
+}
+
+@Electronic{EliotSeattle2021,
+  author = {EliotSeattle},
+  date   = {2022-09-11},
+  title  = {Install Windows from a USB Flash Drive},
+  url    = {https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/install-windows-from-a-usb-flash-drive?view=windows-11#if-your-windows-image-is-larger-than-4gb},
+}
+
+@Electronic{tedhudek2021,
+  author = {tedhudek},
+  date   = {2021-12-15},
+  title  = {Windows PE (WinPE)},
+  url    = {https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro?view=windows-11#limitations},
+}
+
+@Electronic{LanceHarmstrong2021,
+  author = {LanceHarmstrong},
+  date   = {2021-04-07},
+  title  = {Import OEM Images into Auto Pilot},
+  url    = {https://community.spiceworks.com/topic/2313450-import-oem-images-into-auto-pilot},
+}
+
+@Electronic{Christian2021,
+  author = {Christian},
+  date   = {2021-01-03},
+  title  = {What are the differences between MDT and WDS?},
+  url    = {https://techdirectarchive.com/2021/03/01/what-are-the-differences-between-mdt-and-wds/},
+}
+
+@Electronic{Dunford2022,
+  author = {Spencer Dunford},
+  date   = {2022-05-09},
+  title  = {MayMicrosoft Deployment Toolkit (MDT): Pros/cons of a free tool},
+  url    = {https://www.smartdeploy.com/blog/microsoft-deployment-toolkit-pros-cons-of-a-free-tool/},
+}
+
+@Electronic{RDRIT2022,
+  author = {RDR-IT},
+  date   = {2022},
+  title  = {MDT installation of applications when deploying Windows},
+  url    = {https://rdr-it.com/en/mdt-installation-of-applications-when-deploying-windows/},
+}
+
+@Electronic{Erikre2022,
+  author = {Erikre},
+  date   = {2022-04-19},
+  title  = {Add apps to Microsoft Intune},
+  url    = {https://docs.microsoft.com/en-us/mem/intune/apps/apps-add},
+}
+
+@Electronic{Arwidmark2016,
+  author = {Johan Arwidmark},
+  date   = {2016-09-01},
+  title  = {Deploying local group policies with MDT 2013 Update 2},
+  url    = {https://www.deploymentresearch.com/deploying-local-group-policies-with-mdt-2013-update-2/},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

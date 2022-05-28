@@ -11,16 +11,16 @@
 %% mogelijke manier toegepast hebt om een antwoord te vinden op de
 %% onderzoeksvraag.
 
-Het doel van dit onderzoek is om uitgebreid te beschrijven wat de voor- en nadelen zijn van beide IT-omgevingen alsook de verschillende uitdagingen die met beide omgevingen gepaard gaan. Volgende onderzoeksvragen zullen beantwoord worden:
+Het doel van dit onderzoek is om uitgebreid te beschrijven wat de voor- en nadelen zijn van twee IT-omgevingen (een WDS/MDT-omgeving tegenover een Microsoft Intune Windows Autopilot omgeving) alsook de verschillende uitdagingen die met beide omgevingen gepaard gaan. Volgende onderzoeksvragen worden beantwoord:
 
 \begin{itemize}
-    \item Wat zijn de voor- en nadelen van zowel een MDT/WDS-omgeving als een Microsoft Intune Autopilot omgeving voor een dienstverlenende KMO?
-    \item Wat zijn de uitdagingen die gepaard gaan met zowel een MDT/WDS-omgeving als een Microsoft Intune Autopilot omgeving voor een dienstverlenende KMO?
-    \item Is het voordelig voor een dienstverlenende KMO om zijn MDT/WDS-omgeving te vervangen door een Microsoft Intune Autopilot omgeving?
+    \item Wat zijn de voor- en nadelen van zowel een WDS/MDT-omgeving als een Microsoft Intune Autopilot omgeving voor een dienstverlenende KMO?
+    \item Wat zijn de uitdagingen die gepaard gaan met zowel een WDS/MDT-omgeving als een Microsoft Intune Autopilot omgeving voor een dienstverlenende KMO?
+    \item Is het voordelig voor een dienstverlenende KMO om zijn WDS/MDT-omgeving te vervangen door een Microsoft Intune Autopilot omgeving?
 \end{itemize}
 
 \section{Werkwijze}
-Er wordt een onderzoek gevoerd naar laptop deployment voor twee verschillende Windows bedrijfsomgevingen:
+Er wordt een vergelijkende studie uitgevoerd naar laptop deployment voor twee verschillende Windows bedrijfsomgevingen:
 
 \begin{itemize}
     \item WDS/MDT
@@ -43,8 +43,8 @@ Tenslotte wordt er een break-even opgesteld van beide technologieën.
 
 Er zijn twee soorten images die gebruikt worden voor laptopdeployment via WDS/MDT, namelijk Lite Touch deployment en Zero Touch deployment.
 
-\subsection{Lite Touch Deployment}
-De implementatie van Lite Touch vereist tussenkomst van de gebruiker. Het vereist een minimale infrastructuur en kan worden geïnstalleerd vanaf een netwerkshare of media met behulp van een optische schijf of USB flash drive. Bovendien moeten het besturingssysteem en de toepassingen worden geïnstalleerd volgens de software- en computerconfiguratievereisten die volgen op de snelstartgids van Microsoft. \autocite(Lithmee2019)
+\subsection{Requirements Lite Touch Deployment}
+De implementatie van Lite Touch vereist tussenkomst van de gebruiker. Het vereist een minimale infrastructuur en kan worden geïnstalleerd vanaf een netwerkshare of media met behulp van een optische schijf of USB flash drive. Bovendien moeten het besturingssysteem en de toepassingen worden geïnstalleerd volgens de software- en computerconfiguratievereisten die volgen op de snelstartgids van Microsoft.
 
 Daarnaast zijn de belangrijkste stappen voor het implementeren van LiteTouch:
 
@@ -58,7 +58,7 @@ Daarnaast zijn de belangrijkste stappen voor het implementeren van LiteTouch:
     \item Deploy de captured image van de referentiecomputer naar de doelcomputer.
 \end{itemize}
 
-\subsection{Zero Touch Deployment}
+\subsection{Requirements Zero Touch Deployment}
 Zero Touch Deployment is een volledig geautomatiseerde implementatie. Voor deze installatie is dus geen tussenkomst van de gebruiker vereist.
 Een continue netwerkverbinding met het distributiepunt is echter wel vereist.
 
@@ -77,7 +77,7 @@ Zero Touch Deployment vereist installatie via Configuration Manager van diverse 
     \item Netwerkservices, waaronder Domain Name System (DNS) en Dynamic Host Configuration Protocol (DHCP) en Active Directory Domain Services (AD DS)
 \end{itemize}
 
-De belangrijkste stappen voor een "zero-touch"-implementatie zijn: \autocite(Lithmee2019)
+De belangrijkste stappen voor een ZeroTouch implementatie zijn:
 
 \begin{enumerate}
     \item De vereiste infrastructuur voorbereiden
@@ -87,7 +87,7 @@ De belangrijkste stappen voor een "zero-touch"-implementatie zijn: \autocite(Lit
     \item Maak en configureer een task sequence om de doelcomputer te implementeren
 \end{enumerate}
 
-In aanvulling op de  type implementatie, waarbij de vastgelegde image van de referentiecomputer wordt geïmplementeerd op de doelcomputer, is er nog een ander type implementatie, namelijk een gebruikers gestuurde implementatie. Handmatige tussenkomst is vereist om te reageren op installatie prompts zoals wachtwoorden, computernamen en taalinstellingen. Zero touch en user driven types vereisen ondersteuning van de Microsoft System Center infrastructuur.
+
 
 \subsection{Installeren van Windows}
 
@@ -100,7 +100,13 @@ In aanvulling op de  type implementatie, waarbij de vastgelegde image van de ref
 
 \section{Microsoft Intune: Windows Autopilot}
 
+Microsoft Intune Windows Autopilot is een omgeving, die volledig in de cloud beschikbaar is. Intune is een product van Microsoft en heeft een onderdeel genaamd Windows Autopilot om laptop deployment mogelijk te maken voor bedrijven die dit nodig hebben.
+
 \subsection{Installeren van Windows}
+
+Windows Autopilot zorgt niet voor de installatie van het besturingssysteem op een computer. Het werkt verder op de lokale image van de computer. Autopilot is slechts een geautomatiseerde methode voor het implementeren van applicaties, bedrijfspolicies en configuraties op een machine die rechtstreeks van de OEM wordt geïmaged. In wezen wordt "imaging" overgeslagen, ofwel omdat er niet echt een image nodig is, of omdat de OEM betaald wordt om het voor het bedrijf te doen.
+
+Dit is dus een potentieel nadeel, omdat een bedrijf een computer van een oude werknemer niet kan stagen met een nieuwe image. Als een bedrijf dit toch wilt doen, dan moeten oude tools zoals WDS/MDT toch gebruikt worden om de imaging uit te voeren.
 
 \subsection{Installeren van Applicaties}
 

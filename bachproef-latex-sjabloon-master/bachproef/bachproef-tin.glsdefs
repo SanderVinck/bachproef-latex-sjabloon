@@ -1,0 +1,84 @@
+\glsdefs@newdocentry{OS}%
+{%
+name={OS},%
+sort={OS},%
+type={main},%
+first={OS},%
+firstplural={OSs},%
+text={OS},%
+plural={OSs},%
+description={Operating System of besturingssysteem. Dit is de verbinding tussen hardware en de computergebruiker. Voobeelden zijn: Windows OS, Linux OS, MacOS, etc.},%
+descriptionplural={Operating System of besturingssysteem. Dit is de verbinding tussen hardware en de computergebruiker. Voobeelden zijn: Windows OS, Linux OS, MacOS, etc.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{I/O}%
+{%
+name={I/O},%
+sort={I/O},%
+type={main},%
+first={I/O},%
+firstplural={I/Os},%
+text={I/O},%
+plural={I/Os},%
+description={Input/Output of invoer en uitvoer.},%
+descriptionplural={Input/Output of invoer en uitvoer.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{OEM}%
+{%
+name={OEM},%
+sort={OEM},%
+type={main},%
+first={OEM},%
+firstplural={OEMs},%
+text={OEM},%
+plural={OEMs},%
+description={OEM staat voor Original Equipment Manufacturer of de originele fabrikant van het product.},%
+descriptionplural={OEM staat voor Original Equipment Manufacturer of de originele fabrikant van het product.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
